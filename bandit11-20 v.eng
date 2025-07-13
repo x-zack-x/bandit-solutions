@@ -1,0 +1,45 @@
+Level 11:  
+- Rot13 translation: `echo "text" | tr 'A-Za-z' 'N-ZA-Mn-za-m'`.  
+- Password: `5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu`  
+
+Level 12:  
+- Reverse a hexdump: `xxd -r file > output`.  
+- Decompress with `file output` → Use appropriate tool (gzip, bzip2, tar).  
+- Password: `8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL`  
+
+Level 13:  
+- Use SSH with a private key:  
+  `ssh -i sshkey.private bandit14@localhost`.  
+- Password: `4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e`  
+
+Level 14:  
+- Submit password to port 30000:  
+  `echo "4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e" | nc localhost 30000`.  
+- Password: `BfMYroe26WYalil77FoDi9qh59eK5xNr`  
+
+Level 15:  
+- Submit password via SSL:  
+  `openssl s_client -connect localhost:30001`, then paste password.  
+- Password: `cluFn7wTiGryunymYOu4RcffSxQluehd`  
+
+Level 16:  
+- Find SSL ports: `nmap -sV -p 31000-32000 localhost`.  
+- Connect and retrieve private key, then use it for Level 17.  
+- Password: `-----BEGIN RSA PRIVATE KEY-----...`  
+
+Level 17:  
+- Compare two files: `diff passwords.old passwords.new`.  
+- Password: `hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg`  
+
+Level 18:  
+- Run a remote command without login:  
+  `ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"`.  
+- Password: `awhqfNnAbc1naukrpqDYcF95h7HoMTrC`  
+
+Level 19:  
+- Exploit SUID binary: `./bandit20-do cat /etc/bandit_pass/bandit20`.  
+- Password: `VxCazJaVykI6W36BkBU0mJTCM8rR95XT`  
+
+Level 20:  
+- Set up a listener and send password via SUID binary.  
+- Password: `NvEJF7oVjkddltPSrdKEFOllh9V1IBcq`  

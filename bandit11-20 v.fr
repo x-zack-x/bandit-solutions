@@ -1,0 +1,45 @@
+Niveau 11 :  
+- Traduction Rot13 : `echo "texte" | tr 'A-Za-z' 'N-ZA-Mn-za-m'`.  
+- Mot de passe : `5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu`  
+
+Niveau 12 :  
+- Inverser un hexdump : `xxd -r fichier > output`.  
+- Décompressez avec `file output` → Utilisez l'outil approprié (gzip, bzip2, tar).  
+- Mot de passe : `8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL`  
+
+Niveau 13 :  
+- Utilisez une clé privée SSH :  
+  `ssh -i sshkey.private bandit14@localhost`.  
+- Mot de passe : `4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e`  
+
+Niveau 14 :  
+- Envoyez le mot de passe au port 30000 :  
+  `echo "4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e" | nc localhost 30000`.  
+- Mot de passe : `BfMYroe26WYalil77FoDi9qh59eK5xNr`  
+
+Niveau 15 :  
+- Envoyez le mot de passe via SSL :  
+  `openssl s_client -connect localhost:30001`, puis collez le mot de passe.  
+- Mot de passe : `cluFn7wTiGryunymYOu4RcffSxQluehd`  
+
+Niveau 16 :  
+- Trouvez les ports SSL : `nmap -sV -p 31000-32000 localhost`.  
+- Connectez-vous et récupérez la clé privée pour le niveau 17.  
+- Mot de passe : `-----BEGIN RSA PRIVATE KEY-----...`  
+
+Niveau 17 :  
+- Comparez deux fichiers : `diff passwords.old passwords.new`.  
+- Mot de passe : `hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg`  
+
+Niveau 18 :  
+- Exécutez une commande à distance sans connexion :  
+  `ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"`.  
+- Mot de passe : `awhqfNnAbc1naukrpqDYcF95h7HoMTrC`  
+
+Niveau 19 :  
+- Exploitez un binaire SUID : `./bandit20-do cat /etc/bandit_pass/bandit20`.  
+- Mot de passe : `VxCazJaVykI6W36BkBU0mJTCM8rR95XT`  
+
+Niveau 20 :  
+- Configurez un écouteur et envoyez le mot de passe via un binaire SUID.  
+- Mot de passe : `NvEJF7oVjkddltPSrdKEFOllh9V1IBcq`  

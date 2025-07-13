@@ -1,0 +1,40 @@
+Level 1:  
+- If the file has a "-" in its name, use `./-` to read it.  
+- Password: `boJ9jbbUNNfktd78OOpsqOltutMc3MY1`  
+
+Level 2:  
+- For filenames with spaces, use quotes: `cat "spaces in this filename"`.  
+- Password: `CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9`  
+
+Level 3:  
+- Hidden files are revealed with `ls -a`.  
+- Password: `pIwrPrtPN36QITSp3EQaw936yaFoFgAB`  
+
+Level 4:  
+- Unreadable files can be dumped with `strings`.  
+- Password: `koReBOKuIDDepwhWk7jZC0RTdopnAYKh`  
+
+Level 5:  
+- Find hidden files by size: `du -a`.  
+- Password: `DXjZPULLxYr17uwoI01bNLQbtFemEgo7`  
+
+Level 6:  
+- Find a file owned by bandit7:group6 with:  
+  `find / -user bandit7 -group bandit6 -size 33c 2>/dev/null`.  
+- Password: `HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs`  
+
+Level 7:  
+- Search for a word in a file: `grep "millionth" data.txt`.  
+- Password: `cvX2JJa4CFALtqS87jk27qwqGhBM9plV`  
+
+Level 8:  
+- Find the unique line: `sort data.txt | uniq -u`.  
+- Password: `UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR`  
+
+Level 9:  
+- Search for lines starting with "=": `strings data.txt | grep "^="`.  
+- Password: `truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk`  
+
+Level 10:  
+- Decode base64: `echo "encoded_text" | base64 --decode`.  
+- Password: `IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR`  

@@ -1,0 +1,40 @@
+Niveau 1 :  
+- Si le fichier a un "-", utilisez `./-` pour le lire.  
+- Mot de passe : `boJ9jbbUNNfktd78OOpsqOltutMc3MY1`  
+
+Niveau 2 :  
+- Pour les noms de fichiers avec espaces, utilisez des guillemets : `cat "spaces in this filename"`.  
+- Mot de passe : `CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9`  
+
+Niveau 3 :  
+- Les fichiers cachés sont visibles avec `ls -a`.  
+- Mot de passe : `pIwrPrtPN36QITSp3EQaw936yaFoFgAB`  
+
+Niveau 4 :  
+- Les fichiers illisibles peuvent être lus avec `strings`.  
+- Mot de passe : `koReBOKuIDDepwhWk7jZC0RTdopnAYKh`  
+
+Niveau 5 :  
+- Trouvez les fichiers cachés par taille : `du -a`.  
+- Mot de passe : `DXjZPULLxYr17uwoI01bNLQbtFemEgo7`  
+
+Niveau 6 :  
+- Trouvez un fichier appartenant à bandit7:group6 avec :  
+  `find / -user bandit7 -group bandit6 -size 33c 2>/dev/null`.  
+- Mot de passe : `HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs`  
+
+Niveau 7 :  
+- Cherchez un mot dans un fichier : `grep "millionth" data.txt`.  
+- Mot de passe : `cvX2JJa4CFALtqS87jk27qwqGhBM9plV`  
+
+Niveau 8 :  
+- Trouvez la ligne unique : `sort data.txt | uniq -u`.  
+- Mot de passe : `UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR`  
+
+Niveau 9 :  
+- Cherchez les lignes commençant par "=" : `strings data.txt | grep "^="`.  
+- Mot de passe : `truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk`  
+
+Niveau 10 :  
+- Décodez le base64 : `echo "encoded_text" | base64 --decode`.  
+- Mot de passe : `IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR`  
